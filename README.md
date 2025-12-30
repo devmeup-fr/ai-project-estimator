@@ -321,7 +321,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Website: (https://devmeup.fr)
 - GitHub: [@devmeup-fr](https://github.com/devmeup-fr)
-- LinkedIn: (https://www.linkedin.com/company/devmup)
+- LinkedIn: (https://www.linkedin.com/company/devmeup/)
 
 ---
 
