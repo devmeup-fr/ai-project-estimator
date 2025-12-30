@@ -1,0 +1,36 @@
+{
+  "name": "ai-project-estimator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI-powered project estimator - Full-stack demo application",
+  "packageManager": "pnpm@9",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevMeUp/ai-project-estimator.git"
+  },
+  "author": "DevMeUp Team",
+  "license": "MIT",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules .turbo",
+    "postinstall": "turbo run build"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DevMeUp/ai-project-estimator/issues"
+  },
+  "homepage": "https://github.com/DevMeUp/ai-project-estimator#readme"
+}
