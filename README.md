@@ -101,37 +101,37 @@ ai-project-estimator/
 
 ### Frontend
 
-| Technology | Purpose |
-|-----------|---------|
-| **Next.js 16** | React framework with App Router |
-| **React 19** | UI library |
-| **TypeScript** | Static type checking |
-| **Tailwind CSS** | Utility-first styling |
-| **TanStack Query** | Server state management |
-| **Zustand** | Client state management |
-| **React Hook Form** | Form handling |
-| **Zod** | Schema validation |
-| **ESLint** | Code linting |
+| Technology          | Purpose                         |
+| ------------------- | ------------------------------- |
+| **Next.js 16**      | React framework with App Router |
+| **React 19**        | UI library                      |
+| **TypeScript**      | Static type checking            |
+| **Tailwind CSS**    | Utility-first styling           |
+| **TanStack Query**  | Server state management         |
+| **Zustand**         | Client state management         |
+| **React Hook Form** | Form handling                   |
+| **Zod**             | Schema validation               |
+| **ESLint**          | Code linting                    |
 
 ### Backend
 
-| Technology | Purpose |
-|-----------|---------|
-| **NestJS 10** | Node.js framework |
-| **TypeScript** | Static type checking |
-| **Express** | HTTP server (via NestJS) |
-| **Swagger/OpenAPI** | API documentation |
-| **Passport** | Authentication strategy |
-| **JWT** | Token-based auth |
+| Technology          | Purpose                  |
+| ------------------- | ------------------------ |
+| **NestJS 10**       | Node.js framework        |
+| **TypeScript**      | Static type checking     |
+| **Express**         | HTTP server (via NestJS) |
+| **Swagger/OpenAPI** | API documentation        |
+| **Passport**        | Authentication strategy  |
+| **JWT**             | Token-based auth         |
 
 ### DevOps & Tooling
 
-| Tool | Purpose |
-|------|---------|
-| **pnpm** | Fast, disk-efficient package manager |
-| **Turbo** | Monorepo build orchestration |
-| **Git** | Version control |
-| **GitHub Actions** | CI/CD pipeline |
+| Tool               | Purpose                              |
+| ------------------ | ------------------------------------ |
+| **pnpm**           | Fast, disk-efficient package manager |
+| **Turbo**          | Monorepo build orchestration         |
+| **Git**            | Version control                      |
+| **GitHub Actions** | CI/CD pipeline                       |
 
 ---
 
@@ -161,12 +161,14 @@ pnpm clean            # Remove build artifacts
 ### Project Setup Details
 
 **Frontend** (`apps/frontend`)
+
 - Runs on http://localhost:3000
 - Uses Next.js App Router
 - Styled with Tailwind CSS
 - TypeScript strict mode
 
 **Backend** (`apps/backend`)
+
 - Runs on http://localhost:3001
 - Exposes REST API
 - Health check: GET /health
@@ -203,11 +205,13 @@ Dockerfile templates ready to be added for containerization.
 Create `.env` files in each app:
 
 **apps/frontend/.env.local**
+
 ```
 NEXT_PUBLIC_API_URL=http://localhost:3001
 ```
 
 **apps/backend/.env**
+
 ```
 PORT=3001
 NODE_ENV=development
@@ -273,11 +277,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ### Installation Issues
 
 **pnpm not found?**
+
 ```bash
 npm install -g pnpm@9
 ```
 
 **Port already in use?**
+
 ```bash
 # Change ports in dev scripts or kill process
 # Frontend: app/lib/next.config.js
@@ -285,6 +291,7 @@ npm install -g pnpm@9
 ```
 
 **TypeScript errors?**
+
 ```bash
 pnpm lint:frontend
 pnpm lint:backend
@@ -312,9 +319,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **DevMeUp** is a fullstack development team showcasing modern web technologies and best practices through demo applications like this one.
 
-- Website: (Coming soon)
+- Website: (https://devmeup.fr)
 - GitHub: [@devmeup-fr](https://github.com/devmeup-fr)
-- LinkedIn: (Coming soon)
+- LinkedIn: (https://www.linkedin.com/companiy/devmup/)
 
 ---
 
