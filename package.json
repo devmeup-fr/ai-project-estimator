@@ -2,35 +2,22 @@
   "name": "ai-project-estimator",
   "private": true,
   "version": "1.0.0",
-  "description": "AI-powered project estimator - Full-stack demo application",
-  "packageManager": "pnpm@9",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DevMeUp/ai-project-estimator.git"
-  },
-  "author": "DevMeUp Team",
-  "license": "MIT",
-  "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "type-check": "turbo run type-check",
-    "clean": "turbo run clean && rm -rf node_modules .turbo",
-    "postinstall": "turbo run build"
-  },
+  "packageManager": "npm@11.4.2",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
+  "scripts": {
+    "dev:frontend": "cd apps/frontend && npm run dev",
+    "dev:backend": "cd apps/backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd apps/frontend && npm run build",
+    "build:backend": "cd apps/backend && npm run build",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:frontend": "cd apps/frontend && npm run lint",
+    "lint:backend": "cd apps/backend && npm run lint"
+  },
   "devDependencies": {
     "turbo": "^2.0.0"
-  },
-  "main": "index.js",
-  "keywords": [],
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/DevMeUp/ai-project-estimator/issues"
-  },
-  "homepage": "https://github.com/DevMeUp/ai-project-estimator#readme"
+  }
 }
