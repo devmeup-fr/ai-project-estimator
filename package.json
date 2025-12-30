@@ -2,20 +2,20 @@
   "name": "ai-project-estimator",
   "private": true,
   "version": "1.0.0",
-  "packageManager": "npm@11.4.2",
+  "packageManager": "pnpm@9.11.0",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "dev:frontend": "cd apps/frontend && npm run dev",
-    "dev:backend": "cd apps/backend && npm run dev",
-    "build": "npm run build:frontend && npm run build:backend",
-    "build:frontend": "cd apps/frontend && npm run build",
-    "build:backend": "cd apps/backend && npm run build",
-    "lint": "npm run lint:frontend && npm run lint:backend",
-    "lint:frontend": "cd apps/frontend && npm run lint",
-    "lint:backend": "cd apps/backend && npm run lint"
+    "dev:frontend": "pnpm -C apps/frontend dev",
+    "dev:backend": "pnpm -C apps/backend dev",
+    "build": "pnpm -C apps/frontend build && pnpm -C apps/backend build",
+    "build:frontend": "pnpm -C apps/frontend build",
+    "build:backend": "pnpm -C apps/backend build",
+    "lint": "pnpm -C apps/frontend lint && pnpm -C apps/backend lint",
+    "lint:frontend": "pnpm -C apps/frontend lint",
+    "lint:backend": "pnpm -C apps/backend lint"
   },
   "devDependencies": {
     "turbo": "^2.0.0"
