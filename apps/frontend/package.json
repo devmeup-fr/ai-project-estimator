@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "echo \"Frontend linting disabled - Next.js auto-lints on build\"",
+    "lint": "eslint .",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next"
   },
@@ -27,7 +27,11 @@
     "postcss": "^8.4.49",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.18.0",
-    "eslint-config-next": "^16.0.0"
-  },
-  "type": "module"
+    "eslint-config-next": "^16.0.0",
+    "@eslint/js": "^9.39.2",
+    "@eslint/eslintrc": "^3.3.1",
+    "globals": "^16.4.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "@typescript-eslint/eslint-plugin": "^8.27.0"
+  }
 }
